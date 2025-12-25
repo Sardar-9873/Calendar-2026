@@ -1,0 +1,103 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Poppins",sans-serif;
+}
+
+body{
+background:radial-gradient(circle,#0a2a43,#000);
+color:#fff;
+}
+
+header{
+text-align:center;
+padding:35px;
+background:linear-gradient(135deg,#000,#1c1c1c);
+border-bottom:3px solid gold;
+}
+
+header h1{
+color:gold;
+font-size:2.8rem;
+letter-spacing:2px;
+}
+
+header h2{
+margin-top:8px;
+font-size:1.4rem;
+}
+
+.calendar{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+padding:40px;
+}
+
+.month{
+background:rgba(255,255,255,0.08);
+border-radius:18px;
+padding:20px;
+box-shadow:0 15px 35px rgba(0,0,0,0.8);
+transition:0.4s;
+}
+
+.month:hover{
+transform:translateY(-12px) scale(1.02);
+box-shadow:0 25px 55px rgba(255,215,0,0.6);
+}
+
+.month h3{
+text-align:center;
+font-size:1.6rem;
+color:gold;
+}
+
+.hijri{
+text-align:center;
+margin-bottom:15px;
+font-size:0.95rem;
+color:#ddd;
+}
+
+.dates{
+display:grid;
+grid-template-columns:repeat(7,1fr);
+gap:8px;
+}
+
+.dates span{
+background:rgba(255,255,255,0.15);
+padding:10px;
+border-radius:10px;
+text-align:center;
+font-weight:500;
+}
+
+.ramadan{
+background:#14532d!important;
+border:2px solid gold;
+}
+
+.eid-day{
+background:linear-gradient(135deg,gold,orange)!important;
+color:black;
+font-weight:bold;
+}
+
+.newyear{
+background:#1e40af!important;
+border:2px solid gold;
+}
+
+.eid{
+border:2px solid gold;
+}
+
+footer{
+text-align:center;
+padding:18px;
+border-top:2px solid gold;
+background:#000;
+}
